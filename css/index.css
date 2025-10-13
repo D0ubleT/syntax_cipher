@@ -146,7 +146,7 @@ body {
     padding: 25px;
     border: #3db8f9 1px solid;
 }
-.comandos a.link {
+.comandos a.link.color-secondary {
     text-decoration: underline;
     color: #8dec36;
 }
