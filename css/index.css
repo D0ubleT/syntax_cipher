@@ -92,7 +92,7 @@ header {
 }
 
 body {
-    background-color: #010101;
+    background-color: #0c0c0c;
     color: #3db8f9;
     scroll-behavior: smooth;
 }
@@ -125,6 +125,24 @@ body {
 .post-it#rosa {
     background-color: #f6c2d9;
 }
+img.juntos {
+  width: 270px;
+    height: 270px;
+    position: fixed;
+    z-index: -1;
+}
+.juntos.j1{
+    background-color: #eee;
+    left: 265px;
+    top: 160px;
+    transform: rotate(9deg);
+}
+.juntos.j2{
+    background-color: #ddd;
+    right: 250px;
+    top: 120px;
+    transform: rotate(-13deg);
+}
 .calendar {
     position: absolute;
     right: 140px;
@@ -137,14 +155,16 @@ body {
     bottom: 70px;
 }
 .comandos {
-    position: absolute;
-    height: 220px;
-    width: 700px;
-    bottom: 60px;
-    color: aliceblue;
-    background-color: #121212;
-    padding: 25px;
-    border: #3db8f9 1px solid;
+  position: fixed;
+  height: fit-content;
+  width: 700px;
+  bottom: 60px;
+  left: 1px;
+  color: aliceblue;
+  background-color: #010101;
+  padding: 25px;
+  border: #3db8f9 1px solid;
+  border-bottom: 0;
 }
 .comandos a.link.color-secondary {
     text-decoration: underline;
@@ -165,21 +185,37 @@ body {
     color: #8dec36;
 }
 .comandos p.color-extra {
-    color: #75a6d5;
+    color: #86a0b9;
 }
 .about {
-    position: absolute;
+    position: fixed;
     width: -webkit-fill-available;
     height: 0px;
     bottom: 0px;
-    left: 5px;
+}
+section#about:active {
+  height: auto;
+  position: relative;
 }
 .servicios {
-    position: absolute;
+    position: fixed;
     width: -webkit-fill-available;
     height: 0px;
     bottom: 0px;
-    left: 5px;
+}
+section#servicios:active {
+  height: auto;
+  position: relative;
+}
+.contacto {
+  position: fixed;
+  width: -webkit-fill-available;
+  height: 0px;
+  bottom: 0px; 
+}
+section#contacto:active {
+  height: auto;
+  position: relative;
 }
 
 ul {
@@ -191,7 +227,7 @@ ul {
 footer {
     position: fixed;
     height: 60px;
-    background-color: #0c0c0c;
+    background-color: #121212;
     bottom: 0;
     display: flex;
     flex-direction: column;
