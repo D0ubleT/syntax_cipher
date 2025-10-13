@@ -145,8 +145,8 @@ img.juntos {
 }
 .calendar {
     position: absolute;
-    right: 140px;
-    bottom: 110px;
+    right: 25px;
+    bottom: 275px;
     transform: rotate(-1deg);
 }
 .requerimientos {
