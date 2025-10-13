@@ -141,14 +141,14 @@ body {
     height: 220px;
     width: 700px;
     bottom: 60px;
-    color: #3db8f9;
+    color: aliceblue;
     background-color: #121212;
     padding: 25px;
-    border: #3db8f9 2px solid;
+    border: #3db8f9 1px solid;
 }
 .comandos a.link {
     text-decoration: underline;
-    color: #3db8f9;
+    color: #8dec36;
 }
 .comandos p {
     display: contents;
