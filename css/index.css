@@ -145,8 +145,8 @@ img.juntos {
 }
 .calendar {
     position: absolute;
-    right: 25px;
-    bottom: 275px;
+    right: 55px;
+    top: 365px;
     transform: rotate(-1deg);
 }
 .requerimientos {
@@ -222,6 +222,47 @@ ul {
     list-style-type: none;
     margin-left: 20px;
 }
+
+
+
+
+article.prod-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.producto {
+    height: auto;
+    flex: auto;
+    max-width: 170px;
+    width: auto;
+    }
+.prod-item {
+    height: auto;
+    flex: auto;
+    max-width: 170px;
+    width: auto;
+}
+.item-tit {
+    font-weight: bold;
+}
+span.precio {
+    text-align: right;
+    display: block;
+}
+.descripcion {
+    text-align: justify;
+}
+.botonera {
+    display: block;
+    text-align: right;
+}
+
+
+
 
 /* Footer */
 footer {
