@@ -149,14 +149,12 @@ ul {
     list-style-type: none;
     margin-left: 20px;
 }
-
 /*sections del acordeón*/
 .about, .servicios, .contacto, .mapa, .calendar {
     width: -webkit-fill-available;
     bottom: 0;
     position: relative;
 }
-
 article.prod-container {
     display: flex;
     flex-wrap: wrap;
@@ -229,6 +227,10 @@ h3 {
   max-height: 490px;
 }
 
+/*error iframe*/
+.error {
+  color: aliceblue;
+}
 /* Footer */
 footer {
     position: fixed;
