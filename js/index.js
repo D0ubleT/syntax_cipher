@@ -1,29 +1,25 @@
 const links = document.querySelectorAll(".toggleLink");
-const secciones = document.querySelectorAll("div[id^='seccion']");
+const secciones = document.querySelectorAll("section.acordeon");
 
-// Función para cerrar todas las secciones
 function cerrarTodas() {
   secciones.forEach(seccion => {
-    seccion.style.display = "none";
+    seccion.classList.remove("activa");
   });
 }
 
-// Evento para cada enlace
 links.forEach(link => {
   link.addEventListener("click", function(event) {
     event.preventDefault();
     const targetId = this.getAttribute("data-target");
     const seccion = document.getElementById(targetId);
 
-    // Cerrar todas antes de abrir la seleccionada
-    cerrarTodas();
-
-    // Mostrar solo la seleccionada
-    seccion.style.display = "block";
+    if (!seccion.classList.contains("activa")) {
+      cerrarTodas();
+      seccion.classList.add("activa");
+    } else {
+      seccion.classList.remove("activa");
+    }
   });
 });
 
-// Botón para cerrar todo
-document.getElementById("cerrarTodo").addEventListener("click", function() {
-  cerrarTodas();
-});
+document.getElementById("cerrarTodo").addEventListener("click", cerrarTodas);
