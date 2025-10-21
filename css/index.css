@@ -131,6 +131,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-size: 14px;
     background-color: #0c0c0c;
     color: #3db8f9;
     scroll-behavior: smooth;
@@ -206,9 +207,6 @@ img.juntos {
   padding: 25px;
   border: #3db8f9 1px solid;
   border-bottom: 0;
-    display: flex;
-  gap: 1em;
-  flex-wrap: wrap;
   align-items: center;
 }
 .comandos a.link.color-secondary {
@@ -217,10 +215,11 @@ img.juntos {
     color: #8dec36;
   transition: background-color 0.3s;
 }
-.comandos a:hover {
-  text-decoration: underline;
-  background-color: #555;
+.comandos a.link.color-secondary:hover {
+    color: #010101;
+    background-color: #8dec36;
 }
+
 .comandos p {
     display: contents;
     color: aliceblue
@@ -306,23 +305,16 @@ footer {
 
 /* Para que funcione el acordeón de comandos */
 #closeAll {
-  margin-left: auto;
-  padding: 0.5em 1em;
   cursor: pointer;
-  background-color: #f44336;
-  color: white;
+  background-color: transparent;
+  color: #8dec36;
   border: none;
-  border-radius: 4px;
 }
 .accordion {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease, padding 0.5s ease;
-  padding: 0 1em;
-  background-color: #f9f9f9;
-  border-top: 1px solid #ccc;
 }
 .accordion.active {
-  max-height: 300px; /* o usa scrollHeight en JS */
-  padding: 1em;
+  max-height: 300px;
 }
