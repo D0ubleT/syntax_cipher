@@ -202,60 +202,9 @@ img.juntos {
 .comandos p.color-extra {
     color: #86a0b9;
 }
-.about, .servicios, .contacto, .mapa {
-    width: -webkit-fill-available;
-    bottom: 0;
-    position: relative;
-}
-section.acordeon {
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
-}
-section.acordeon.activa {
-  max-height: auto;
-  opacity: 1;
-}
 ul {
     list-style-type: none;
     margin-left: 20px;
-}
-
-
-article.prod-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-}
-.producto {
-    height: auto;
-    flex: auto;
-    max-width: 170px;
-    width: auto;
-    }
-.prod-item {
-    height: auto;
-    flex: auto;
-    max-width: 170px;
-    width: auto;
-}
-.item-tit {
-    font-weight: bold;
-}
-span.precio {
-    text-align: right;
-    display: block;
-}
-.descripcion {
-    text-align: justify;
-}
-.botonera {
-    display: block;
-    text-align: right;
 }
 
 
@@ -329,7 +278,6 @@ footer {
   border: none;
   border-radius: 4px;
 }
-
 .accordion {
   max-height: 0;
   overflow: hidden;
@@ -338,7 +286,6 @@ footer {
   background-color: #f9f9f9;
   border-top: 1px solid #ccc;
 }
-
 .accordion.active {
   max-height: 300px; /* o usa scrollHeight en JS */
   padding: 1em;
