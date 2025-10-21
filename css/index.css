@@ -242,6 +242,72 @@ ul {
     margin-left: 20px;
 }
 
+/*sections del acordeón*/
+.about, .servicios, .contacto, .mapa {
+    width: -webkit-fill-available;
+    bottom: 0;
+    position: relative;
+}
+
+article.prod-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+.producto {
+    display: flex;
+    height: auto;
+    min-height: 190px;
+    max-width: 185px;
+    width: auto;
+    padding: 10px 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.producto p {
+    text-align: justify;
+    display: block;
+}
+.producto button {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    background-color: #8dec36;
+    border: none;
+    border-radius: 2px;
+    color: #010101;
+    text-box: auto;
+    cursor: pointer;
+}
+h3 {
+    text-align: left;
+    width: 185px;
+    margin-bottom: 15px;
+}
+/* Para que funcione el acordeón de comandos */
+#closeAll {
+  cursor: pointer;
+  background-color: transparent;
+  color: #8dec36;
+  border: none;
+}
+.accordion {
+  max-height: 0;
+  overflow: hidden;
+}
+.accordion.active {
+  max-height: 490px;
+}
 
 /* Footer */
 footer {
@@ -301,20 +367,4 @@ footer {
 }
 @media only screen and (1024.1px <= width <= 2048px) {
   
-}
-
-/* Para que funcione el acordeón de comandos */
-#closeAll {
-  cursor: pointer;
-  background-color: transparent;
-  color: #8dec36;
-  border: none;
-}
-.accordion {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease, padding 0.5s ease;
-}
-.accordion.active {
-  max-height: 300px;
 }
