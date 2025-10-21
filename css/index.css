@@ -188,44 +188,32 @@ img.juntos {
     color: #86a0b9;
 }
 .about {
-    position: fixed;
     width: -webkit-fill-available;
-    height: 0px;
     bottom: 0px;
-}
-section#about:active {
-  height: auto;
-  position: relative;
+    height: auto;
+    position: relative;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 .servicios {
-    position: fixed;
     width: -webkit-fill-available;
-    height: 0px;
     bottom: 0px;
-}
-section#servicios:active {
-  height: auto;
-  position: relative;
+    height: auto;
+    position: relative;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 .contacto {
-  position: fixed;
-  width: -webkit-fill-available;
-  height: 0px;
-  bottom: 0px; 
-}
-section#contacto:active {
-  height: auto;
-  position: relative;
+    width: -webkit-fill-available;
+    bottom: 0px;
+    height: auto;
+    position: relative;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 .mapa {
-  position: fixed;
-  width: -webkit-fill-available;
-  height: 0px;
-  bottom: 0px; 
-}
-section#mapa:active {
-  height: auto;
-  position: relative;
+    width: -webkit-fill-available;
+    bottom: 0px;
+    height: auto;
+    position: relative;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 ul {
