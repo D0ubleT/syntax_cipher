@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=family=Megrim&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 /*Títulos*/
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 /*Texto general*/
@@ -7,102 +5,13 @@
 /*Para error*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 
-/*tipografías*/
-.rubik-glitch-regular {
+/*para usar en el error 404
+{
   font-family: "Rubik Glitch", system-ui;
   font-weight: 400;
   font-style: normal;
 }
-.megrim-regular {
-  font-family: "Megrim", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-.tilt-neon {
-  font-family: "Tilt Neon", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.orbitron-regular {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.orbitron-medium {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-.orbitron-semi-bold {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-.orbitron-bold {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-.orbitron-extra-bold {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
-.orbitron-black {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-}
-/* Oxanium */
-.oxanium-extralight {
-  font-family: "Oxanium", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-.oxanium-light {
-  font-family: "Oxanium", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-.oxanium-regular {
-  font-family: "Oxanium", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.oxanium-medium {
-  font-family: "Oxanium", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-.oxanium-semi-bold {
-  font-family: "Oxanium", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-}
-.oxanium-bold {
-  font-family: "Oxanium", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-.oxanium-extra-bold {
-  font-family: "Oxanium", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
+*/
 
 * {
   margin: 0;
@@ -124,6 +33,11 @@ header {
     width: auto;
     height: 35px;
     margin: 0px 15px 0px 15px;
+}
+h1 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 body {
@@ -289,10 +203,22 @@ article.prod-container {
     text-box: auto;
     cursor: pointer;
 }
+h2 {
+  color: #8dec36;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px;
+}
 h3 {
+    color: #3db8f9;
     text-align: left;
     width: 185px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
 }
 /* Para que funcione el acordeón de comandos */
 #closeAll {
