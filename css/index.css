@@ -99,12 +99,6 @@ img.juntos {
     top: 120px;
     transform: rotate(-13deg);
 }
-.calendar {
-    position: absolute;
-    right: 55px;
-    top: 365px;
-    transform: rotate(-1deg);
-}
 .requerimientos {
     position: absolute;
     right: 10px;
@@ -157,7 +151,7 @@ ul {
 }
 
 /*sections del acordeón*/
-.about, .servicios, .contacto, .mapa {
+.about, .servicios, .contacto, .mapa, .calendar {
     width: -webkit-fill-available;
     bottom: 0;
     position: relative;
