@@ -92,9 +92,14 @@ header {
 }
 
 body {
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #0c0c0c;
     color: #3db8f9;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 .post-it {
@@ -165,10 +170,20 @@ img.juntos {
   padding: 25px;
   border: #3db8f9 1px solid;
   border-bottom: 0;
+    display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .comandos a.link.color-secondary {
-    text-decoration: underline;
+    text-decoration: none;
+    cursor: pointer;
     color: #8dec36;
+  transition: background-color 0.3s;
+}
+.comandos a:hover {
+  text-decoration: underline;
+  background-color: #555;
 }
 .comandos p {
     display: contents;
@@ -244,8 +259,6 @@ span.precio {
 }
 
 
-
-
 /* Footer */
 footer {
     position: fixed;
@@ -302,7 +315,31 @@ footer {
     flex-direction: row;
   }
 }
-
 @media only screen and (1024.1px <= width <= 2048px) {
   
+}
+
+/* Para que funcione el acordeón de comandos */
+#closeAll {
+  margin-left: auto;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.accordion {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 1em;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+}
+
+.accordion.active {
+  max-height: 300px; /* o usa scrollHeight en JS */
+  padding: 1em;
 }
