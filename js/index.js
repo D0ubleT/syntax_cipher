@@ -1,36 +1,29 @@
-document.getElementById("toggleLinkAbout").addEventListener("click", function(event) {
-  event.preventDefault(); // Evita que el enlace recargue la página
-  const seccion = document.getElementById("about");
-  if (seccion.style.display === "none" || seccion.style.display === "") {
-    seccion.style.display = "block";
-  } else {
+const links = document.querySelectorAll(".toggleLink");
+const secciones = document.querySelectorAll("div[id^='seccion']");
+
+// Función para cerrar todas las secciones
+function cerrarTodas() {
+  secciones.forEach(seccion => {
     seccion.style.display = "none";
-  }
+  });
+}
+
+// Evento para cada enlace
+links.forEach(link => {
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    const targetId = this.getAttribute("data-target");
+    const seccion = document.getElementById(targetId);
+
+    // Cerrar todas antes de abrir la seleccionada
+    cerrarTodas();
+
+    // Mostrar solo la seleccionada
+    seccion.style.display = "block";
+  });
 });
-document.getElementById("toggleLinkServices").addEventListener("click", function(event) {
-  event.preventDefault(); // Evita que el enlace recargue la página
-  const seccion = document.getElementById("services");
-  if (seccion.style.display === "none" || seccion.style.display === "") {
-    seccion.style.display = "block";
-  } else {
-    seccion.style.display = "none";
-  }
-});
-document.getElementById("toggleLinkContact").addEventListener("click", function(event) {
-  event.preventDefault(); // Evita que el enlace recargue la página
-  const seccion = document.getElementById("contact");
-  if (seccion.style.display === "none" || seccion.style.display === "") {
-    seccion.style.display = "block";
-  } else {
-    seccion.style.display = "none";
-  }
-});
-document.getElementById("toggleLinkMap").addEventListener("click", function(event) {
-  event.preventDefault(); // Evita que el enlace recargue la página
-  const seccion = document.getElementById("map");
-  if (seccion.style.display === "none" || seccion.style.display === "") {
-    seccion.style.display = "block";
-  } else {
-    seccion.style.display = "none";
-  }
+
+// Botón para cerrar todo
+document.getElementById("cerrarTodo").addEventListener("click", function() {
+  cerrarTodas();
 });
