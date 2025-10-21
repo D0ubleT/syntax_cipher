@@ -1,15 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=family=Megrim&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/*Títulos*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+/*Texto general*/
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+/*Para error*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 
 /*tipografías*/
 .rubik-glitch-regular {
@@ -21,16 +17,6 @@
   font-family: "Megrim", system-ui;
   font-weight: 400;
   font-style: normal;
-}
-.geo-regular {
-  font-family: "Geo", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.geo-regular-italic {
-  font-family: "Geo", sans-serif;
-  font-weight: 400;
-  font-style: italic;
 }
 .tilt-neon {
   font-family: "Tilt Neon", sans-serif;
@@ -74,6 +60,55 @@
   font-weight: 900;
   font-style: normal;
 }
+/* Oxanium */
+.oxanium-extralight {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.oxanium-light {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.oxanium-regular {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.oxanium-medium {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.oxanium-semi-bold {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.oxanium-bold {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.oxanium-extra-bold {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /* header */
 header {
@@ -92,7 +127,8 @@ header {
 }
 
 body {
-    font-family: "Geo", sans-serif;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     background-color: #0c0c0c;
