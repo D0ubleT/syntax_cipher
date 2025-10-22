@@ -108,7 +108,6 @@ img.juntos {
 }
 .comandos {
   position: fixed;
-  height: -webkit-fill-available;
   width: -webkit-fill-available;
   bottom: 80px;
   left: 0;
@@ -168,7 +167,7 @@ ul {
   bottom: 0;
   position: relative;
 }
-section#services {
+.servicios.accordion.active {
   max-height: 330px;
 }
 article.prod-container {
