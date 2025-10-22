@@ -21,95 +21,97 @@
 
 /* header */
 header {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 .logo-container {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 .logo-img {
-    width: auto;
-    height: 35px;
-    margin: 0px 15px 0px 15px;
+  width: auto;
+  height: 35px;
+  margin: 0px 15px 0px 15px;
 }
 h1 {
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 body {
-    font-family: "Oxanium", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    background-color: #0c0c0c;
-    color: #3db8f9;
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  background-color: #010101;
+  color: #3db8f9;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 .post-it {
-    height: 260px;
-    width: 260px;
-    color: #010101;
-    padding: 16px;
-    margin: 16px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  height: 260px;
+  width: 260px;
+  color: #010101;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 .post-it ul {
-    list-style-type: circle;
-    margin-left: 20px;
+  list-style-type: circle;
+  margin-left: 20px;
 }
 .post-it#azul {
-    background-color: #a1c8e9;
-    transform: rotate(-2deg);
-    float: left;
+  background-color: #a1c8e9;
+  transform: rotate(-2deg);
+  float: left;
 }
 .post-it#verde {
-    background-color: #bcdfc9;
-    transform: rotate(5deg);
-    float: right;
+  background-color: #bcdfc9;
+  transform: rotate(-5deg);
+  right: 190px;
+  position: absolute;
+  top: 10px;
 }
 .post-it#amarillo {
-    background-color: #fff69b;
+  background-color: #fff69b;
 }
 .post-it#rosa {
-    background-color: #f6c2d9;
+  background-color: #f6c2d9;
 }
 img.juntos {
   width: 270px;
-    height: 270px;
-    position: fixed;
-    z-index: -1;
+  height: 270px;
+  position: fixed;
+  z-index: -1;
 }
 .juntos.j1{
-    background-color: #eee;
-    left: 265px;
-    top: 160px;
-    transform: rotate(9deg);
+  background-color: #eee;
+  left: 265px;
+  top: 60px;
+  transform: rotate(9deg);
 }
 .juntos.j2{
-    background-color: #ddd;
-    right: 250px;
-    top: 120px;
-    transform: rotate(-13deg);
+  background-color: #ddd;
+  right: 30px;
+  bottom: 100px;
+  transform: rotate(13deg);
 }
 .requerimientos {
-    position: absolute;
-    right: 10px;
-    bottom: 70px;
+  position: absolute;
+  right: 10px;
+  bottom: 70px;
 }
 .comandos {
   position: fixed;
   height: fit-content;
   width: 700px;
   bottom: 60px;
-  left: 1px;
+  left: 0;
   color: aliceblue;
   background-color: #010101;
   padding: 25px;
@@ -118,99 +120,108 @@ img.juntos {
   align-items: center;
 }
 .comandos a.link.color-extra {
-    text-decoration: none;
-    cursor: pointer;
-    color: #8dec36;
+  text-decoration: none;
+  cursor: pointer;
+  color: #8dec36;
   transition: background-color 0.3s;
 }
 .comandos a.link.color-extra:hover {
-    color: #010101;
-    background-color: #8dec36;
+  color: #010101;
+  background-color: #8dec36;
 }
-
+.comandos a.link.color-primary {
+  text-decoration: none;
+  cursor: pointer;
+  color: #3db8f9;
+  transition: background-color 0.3s;
+}
+.comandos a.link.color-primary:hover {
+  color: #010101;
+  background-color: #3db8f9;
+}
 .comandos p {
-    display: contents;
-    color: aliceblue
+  display: contents;
+  color: aliceblue
 }
 .comandos p.linea-activa {
-    font-weight: 900;
-    font-size: larger;
+  font-weight: 900;
+  font-size: larger;
 }
 .comandos p.color-primary {
-    color: #3db8f9;
+  color: #3db8f9;
 }
 .comandos p.color-secondary {
-    color: #36ecdd;
+  color: #36ecdd;
 }
 .comandos p.color-extra {
-    color: #8dec36;
+  color: #8dec36;
 }
 ul {
-    list-style-type: none;
-    margin-left: 20px;
+  list-style-type: none;
+  margin-left: 20px;
 }
 /*sections del acordeón*/
 .about, .servicios, .contacto, .mapa, .calendar {
-    width: -webkit-fill-available;
-    bottom: 0;
-    position: relative;
+  width: -webkit-fill-available;
+  bottom: 0;
+  position: relative;
 }
 article.prod-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: flex-start;
-    align-content: flex-start;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
 }
 .producto {
-    display: flex;
-    height: auto;
-    min-height: 190px;
-    max-width: 185px;
-    width: auto;
-    padding: 10px 0px;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-end;
+  display: flex;
+  height: auto;
+  min-height: 190px;
+  max-width: 185px;
+  width: auto;
+  padding: 10px 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .producto p {
-    text-align: justify;
-    display: block;
+  text-align: justify;
+  display: block;
 }
 .producto button {
-    width: fit-content;
-    margin-top: 10px;
-    padding: 5px;
-    font-family: "Oxanium", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 13px;
-    background-color: #8dec36;
-    border: none;
-    border-radius: 2px;
-    color: #010101;
-    text-box: auto;
-    cursor: pointer;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 5px;
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  background-color: #8dec36;
+  border: none;
+  border-radius: 2px;
+  color: #010101;
+  text-box: auto;
+  cursor: pointer;
 }
 h2 {
   color: #8dec36;
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 25px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 25px;
 }
 h3 {
-    color: #3db8f9;
-    text-align: left;
-    width: 185px;
-    margin-bottom: 10px;
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 15px;
+  color: #3db8f9;
+  text-align: left;
+  width: 185px;
+  margin-bottom: 10px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 15px;
 }
 /* Para que funcione el acordeón de comandos */
 #closeAll {
@@ -233,19 +244,19 @@ h3 {
 }
 /* Footer */
 footer {
-    position: fixed;
-    height: 60px;
-    background-color: #121212;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    width: -webkit-fill-available;
-    text-align: left;
-    padding: 32px 15px;
-    gap: 10px 0;
+  position: fixed;
+  height: 60px;
+  background-color: #090909;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+  text-align: left;
+  padding: 32px 15px;
+  border-top: #3db8f9 1px solid;
 }
 
 .footer-links {
@@ -259,7 +270,7 @@ footer {
 }
 
 .footer-mapa {
- width: 40%;
+  width: 40%;
 }
 
 .footer-redes {
