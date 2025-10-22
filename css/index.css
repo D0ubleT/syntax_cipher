@@ -462,6 +462,8 @@ footer {
     align-items: flex-start;
     align-content: flex-start;
     justify-content: space-between;
+    height: auto;
+    overflow-y: revert;
   }
   .producto {
     display: flex;
