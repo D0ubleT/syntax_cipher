@@ -21,7 +21,7 @@
 
 /* header */
 header {
-  padding: 15px 0;
+  padding: 5px 0;
 }
 .logo-container {
   display: inline-flex;
@@ -39,7 +39,6 @@ h1 {
   font-optical-sizing: auto;
   font-style: normal;
 }
-
 body {
   font-family: "Oxanium", sans-serif;
   font-optical-sizing: auto;
@@ -52,7 +51,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 .post-it {
   height: 260px;
   width: 260px;
@@ -68,14 +66,16 @@ body {
 .post-it#azul {
   background-color: #a1c8e9;
   transform: rotate(-2deg);
-  float: left;
+  position: absolute;
+  top: 168px;
+  z-index: 1;
 }
 .post-it#verde {
   background-color: #bcdfc9;
   transform: rotate(-5deg);
-  right: 190px;
+  right: 1px;
   position: absolute;
-  top: 10px;
+  top: 30px;
 }
 .post-it#amarillo {
   background-color: #fff69b;
@@ -91,14 +91,14 @@ img.juntos {
 }
 .juntos.j1{
   background-color: #eee;
-  left: 265px;
-  top: 60px;
+  left: 1px;
+  top: 80px;
   transform: rotate(9deg);
 }
 .juntos.j2{
   background-color: #ddd;
   right: 30px;
-  bottom: 100px;
+  bottom: 190px;
   transform: rotate(13deg);
 }
 .requerimientos {
@@ -108,16 +108,18 @@ img.juntos {
 }
 .comandos {
   position: fixed;
-  height: fit-content;
-  width: 700px;
-  bottom: 40px;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  bottom: 80px;
   left: 0;
   color: aliceblue;
   background-color: #010101;
-  padding: 15px 25px;
+  padding: 5px 15px;
   border: #3db8f9 1px solid;
   border-bottom: 0;
   align-items: center;
+  z-index: 3;
+  overflow-y: scroll;
 }
 .comandos a.link.color-extra {
   text-decoration: none;
@@ -166,21 +168,25 @@ ul {
   bottom: 0;
   position: relative;
 }
+section#services {
+  max-height: 330px;
+}
 article.prod-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: flex-start;
-  align-content: flex-start;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: scroll;
+  height: 229px;
 }
 .producto {
   display: flex;
   height: auto;
-  min-height: 190px;
-  max-width: 185px;
+  min-height: fit-content;
+  max-width: -webkit-fill-available;
   width: auto;
-  padding: 10px 0px;
+  padding: 5px 0px;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -211,29 +217,29 @@ h2 {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 25px;
+  font-size: 20px;
 }
 h3 {
   color: #3db8f9;
   text-align: left;
-  width: 185px;
-  margin-bottom: 10px;
+  width: -webkit-fill-available;
+  margin-bottom: 5px;
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 15px;
 }
 form {
-  margin-left: 111px;
-  max-width: 330px;
+  max-width: -webkit-fill-available;
 }
 form label {
   display: inline-block;
   width: 60px;
   text-align: end;
+  vertical-align: top;
 }
 form input, form textarea {
-  width: 266px;
+  width: 264px;
   margin: 1px 0;
   border: 1px solid #3db8f9;
   color: aliceblue;
@@ -266,7 +272,6 @@ form button {
 .accordion.active {
   max-height: 460px;
 }
-
 /*error iframe*/
 .error {
   color: aliceblue;
@@ -274,59 +279,161 @@ form button {
 /* Footer */
 footer {
   position: fixed;
-  height: 40px;
+  height: 80px;
   background-color: #090909;
   bottom: 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: -webkit-fill-available;
   text-align: left;
-  padding: 5px 15px;
+  padding: 5px;
+  font-size: 13px;
   border-top: #3db8f9 1px solid;
+  align-content: space-around;
 }
-
-.footer-links {
-  width: 30%;
-  font-size: clamp(16px, 8vw, 32px);
-}
-
-.footer-ul {
-  list-style-type: none;
-  font-family: 'BBH Sans Bogle', Verdana, Tahoma, sans-serif;
-}
-
-.footer-mapa {
-  width: 40%;
-}
-
-.footer-redes {
-  width: 30%;
-}
-
-.footer-redes svg {
-  width: 80px;
-  fill: azure;
-}
-
 .copyright {
   text-align: left;
 }
-
 /* Medias Querys */
-
 @media only screen and (320px <= width <= 768px) {
   .footer {
     flex-direction: column;
   }
 }
 @media only screen and (768.1px <= width <= 1024px) {
-  .footer {
-    flex-direction: row;
+  header {
+    padding: 15px 0;
   }
-}
-@media only screen and (1024.1px <= width <= 2048px) {
-  
-}
+  .post-it#azul {
+    float: left;
+  }
+  .post-it#verde {
+    right: 190px;
+    top: 10px;
+  }
+  .juntos.j1{
+    left: 265px;
+    top: 60px;
+  }
+  .juntos.j2{
+    right: 30px;
+    bottom: 100px;
+  }
+  .comandos {
+    width: 700px;
+    bottom: 40px;
+    padding: 15px 25px;
+    height: fit-content;
+  }
+  /*sections del acordeón*/
+  .about, .servicios, .contacto, .mapa, .calendar {
+    width: -webkit-fill-available;
+    bottom: 0;
+    position: relative;
+  }
+  article.prod-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+  }
+  .producto {
+    display: flex;
+    height: auto;
+    min-height: 190px;
+    max-width: 185px;
+    width: auto;
+    padding: 10px 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .producto p {
+    text-align: justify;
+    display: block;
+  }
+  .producto button {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    background-color: #8dec36;
+    border: none;
+    border-radius: 2px;
+    color: #010101;
+    text-box: auto;
+    cursor: pointer;
+  }
+  h2 {
+    color: #8dec36;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px;
+  }
+  h3 {
+    color: #3db8f9;
+    text-align: left;
+    width: 185px;
+    margin-bottom: 10px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+  }
+  form {
+    margin-left: 111px;
+    max-width: 330px;
+  }
+  form label {
+    display: inline-block;
+    width: 60px;
+    text-align: end;
+    vertical-align: top;
+  }
+  form input, form textarea {
+    width: 266px;
+    margin: 1px 0;
+    border: 1px solid #3db8f9;
+    color: aliceblue;
+    background: transparent;
+    border-radius: 2px;
+  }
+  form button {
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    background-color: transparent;
+    color: #8dec36;
+    border: #8dec36 1px solid;
+    padding: 4px;
+    border-radius: 2px;
+    margin-top: 2px;
+    margin-right: 1px;
+  }
+  footer {
+    height: 40px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px 15px;
+  }
+  @media only screen and (1024.1px <= width <= 2048px) {
+    .post-it#azul {
+      float: left;
+      position: revert;
+    }
+    .post-it#verde {
+      right: 190px;
+      top: 10px;
+    }
+  }
