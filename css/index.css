@@ -223,6 +223,39 @@ h3 {
   font-style: normal;
   font-size: 15px;
 }
+form {
+  margin-left: 111px;
+  max-width: 330px;
+}
+form label {
+  display: inline-block;
+  width: 60px;
+  text-align: end;
+}
+form input, form textarea {
+  width: 266px;
+  margin: 1px 0;
+  border: 1px solid #3db8f9;
+  color: aliceblue;
+  background: transparent;
+  border-radius: 2px;
+}
+:focus-visible {
+  outline: #8dec36 auto 1px;
+  outline-offset: 1px;
+}
+form button {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  background-color: transparent;
+  color: #8dec36;
+  border: #8dec36 1px solid;
+  padding: 4px;
+  border-radius: 2px;
+  margin-top: 2px;
+  margin-right: 1px;
+}
 /* Para que funcione el acordeón de comandos */
 #closeAll {
   cursor: pointer;
