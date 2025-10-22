@@ -229,7 +229,9 @@ h3 {
   font-size: 15px;
 }
 form {
-  max-width: -webkit-fill-available;
+  max-width: 328px;
+  width: -webkit-fill-available;
+  margin: 0 auto;
 }
 form label {
   display: inline-block;
@@ -310,7 +312,7 @@ footer {
     float: left;
   }
   .post-it#verde {
-    right: 190px;
+    right: 41px;
     top: 10px;
   }
   .juntos.j1{
@@ -319,7 +321,7 @@ footer {
   }
   .juntos.j2{
     right: 30px;
-    bottom: 100px;
+    bottom: 240px;
   }
   .comandos {
     width: 700px;
@@ -427,12 +429,127 @@ footer {
     padding: 5px 15px;
   }
   @media only screen and (1024.1px <= width <= 2048px) {
+    header {
+      padding: 15px 0;
+    }
     .post-it#azul {
       float: left;
-      position: revert;
     }
     .post-it#verde {
       right: 190px;
       top: 10px;
+    }
+    .juntos.j1{
+      left: 265px;
+      top: 60px;
+    }
+    .juntos.j2{
+      right: 30px;
+      bottom: 100px;
+    }
+    .comandos {
+      width: 700px;
+      bottom: 40px;
+      padding: 15px 25px;
+      height: fit-content;
+    }
+    /*sections del acordeón*/
+    .about, .servicios, .contacto, .mapa, .calendar {
+      width: -webkit-fill-available;
+      bottom: 0;
+      position: relative;
+    }
+    article.prod-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-content: space-between;
+    }
+    .producto {
+      display: flex;
+      height: auto;
+      min-height: 190px;
+      max-width: 185px;
+      width: auto;
+      padding: 10px 0px;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .producto p {
+      text-align: justify;
+      display: block;
+    }
+    .producto button {
+      width: fit-content;
+      margin-top: 10px;
+      padding: 5px;
+      font-family: "Oxanium", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 13px;
+      background-color: #8dec36;
+      border: none;
+      border-radius: 2px;
+      color: #010101;
+      text-box: auto;
+      cursor: pointer;
+    }
+    h2 {
+      color: #8dec36;
+      font-family: "Orbitron", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 25px;
+    }
+    h3 {
+      color: #3db8f9;
+      text-align: left;
+      width: 185px;
+      margin-bottom: 10px;
+      font-family: "Orbitron", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-size: 15px;
+    }
+    form {
+      margin-left: 111px;
+      max-width: 330px;
+    }
+    form label {
+      display: inline-block;
+      width: 60px;
+      text-align: end;
+      vertical-align: top;
+    }
+    form input, form textarea {
+      width: 266px;
+      margin: 1px 0;
+      border: 1px solid #3db8f9;
+      color: aliceblue;
+      background: transparent;
+      border-radius: 2px;
+    }
+    form button {
+      display: inline-block;
+      float: right;
+      cursor: pointer;
+      background-color: transparent;
+      color: #8dec36;
+      border: #8dec36 1px solid;
+      padding: 4px;
+      border-radius: 2px;
+      margin-top: 2px;
+      margin-right: 1px;
+    }
+    footer {
+      height: 40px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 5px 15px;
     }
   }
