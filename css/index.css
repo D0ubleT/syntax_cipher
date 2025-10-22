@@ -117,13 +117,13 @@ img.juntos {
   border-bottom: 0;
   align-items: center;
 }
-.comandos a.link.color-secondary {
+.comandos a.link.color-extra {
     text-decoration: none;
     cursor: pointer;
     color: #8dec36;
   transition: background-color 0.3s;
 }
-.comandos a.link.color-secondary:hover {
+.comandos a.link.color-extra:hover {
     color: #010101;
     background-color: #8dec36;
 }
@@ -140,10 +140,10 @@ img.juntos {
     color: #3db8f9;
 }
 .comandos p.color-secondary {
-    color: #8dec36;
+    color: #36ecdd;
 }
 .comandos p.color-extra {
-    color: #86a0b9;
+    color: #8dec36;
 }
 ul {
     list-style-type: none;
