@@ -427,6 +427,7 @@ img.coneja {
     padding: 5px 15px;
   }
   img.coneja {
+    display: revert;
     left: 536px;
     bottom: 143px;
     position: absolute;
@@ -561,6 +562,7 @@ img.coneja {
     padding: 5px 15px;
   }
   img.coneja {
+    display: revert;
     left: 536px;
     bottom: 143px;
     position: absolute;
