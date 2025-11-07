@@ -298,6 +298,9 @@ footer {
 .copyright {
   text-align: left;
 }
+img.coneja {
+    display: none;
+}
 /* Medias Querys */
 @media only screen and (768.1px <= width <= 1024px) {
   header {
@@ -422,6 +425,13 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 5px 15px;
+  }
+  img.coneja {
+    left: 536px;
+    bottom: 143px;
+    position: absolute;
+    z-index: 4;
+    width: 210px;
   }
 }
 @media only screen and (1024.1px <= width <= 2048px) {
@@ -549,5 +559,12 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 5px 15px;
+  }
+  img.coneja {
+    left: 536px;
+    bottom: 143px;
+    position: absolute;
+    z-index: 4;
+    width: 210px;
   }
 }
