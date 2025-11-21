@@ -298,7 +298,7 @@ footer {
 .copyright {
   text-align: left;
 }
-img.coneja {
+img.coneja, img.perro {
     display: none;
 }
 /* Medias Querys */
@@ -434,6 +434,14 @@ img.coneja {
     z-index: 4;
     width: 210px;
   }
+  img.perro {
+    display: revert;
+    left: 697px;
+    bottom: 29px;
+    position: absolute;
+    z-index: 4;
+    width: 155px;
+}
 }
 @media only screen and (1024.1px <= width <= 2048px) {
   header {
@@ -569,4 +577,12 @@ img.coneja {
     z-index: 4;
     width: 210px;
   }
+  img.perro {
+    display: revert;
+    left: 697px;
+    bottom: 29px;
+    position: absolute;
+    z-index: 4;
+    width: 155px;
+}
 }
