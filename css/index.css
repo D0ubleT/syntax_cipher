@@ -132,6 +132,7 @@ img.juntos {
   overflow-y: scroll;
   height: fit-content;
   position: relative;
+  overflow: visible; 
 }
 .comandos a.link.color-extra {
   text-decoration: none;
