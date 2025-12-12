@@ -192,6 +192,7 @@ article.prod-container {
   align-items: center;
   overflow-y: scroll;
   height: 229px;
+  padding: 0 7px;
 }
 .producto {
   display: flex;
