@@ -1,0 +1,597 @@
+/*Títulos*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+/*Texto general*/
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+/*Para error*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+/*para usar en el error 404
+{
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  padding: 5px 0;
+}
+.logo-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo-img {
+  width: auto;
+  height: 35px;
+  margin: 0px 15px 0px 15px;
+}
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  background-color: #010101;
+  color: #3db8f9;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.post-it {
+  height: 260px;
+  width: 260px;
+  color: #010101;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.post-it ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
+.post-it#azul {
+  background-color: #a1c8e9;
+  transform: rotate(-2deg);
+  position: absolute;
+  top: 168px;
+  z-index: 1;
+}
+.post-it#verde {
+  background-color: #bcdfc9;
+  transform: rotate(-5deg);
+  right: 1px;
+  position: absolute;
+  top: 30px;
+}
+.post-it#amarillo {
+  background-color: #fff69b;
+}
+.post-it#rosa {
+  background-color: #f6c2d9;
+}
+img.juntos {
+  width: 270px;
+  height: 270px;
+  position: fixed;
+  z-index: -1;
+}
+.juntos.j1{
+  background-color: #eee;
+  left: 1px;
+  top: 80px;
+  transform: rotate(9deg);
+}
+.juntos.j2{
+  background-color: #ddd;
+  right: 30px;
+  bottom: 190px;
+  transform: rotate(13deg);
+}
+.requerimientos {
+  position: absolute;
+  right: 10px;
+  bottom: 70px;
+}
+.comandos {
+  width: -webkit-fill-available;
+  bottom: 80px;
+  left: 0;
+  color: aliceblue;
+  background-color: #010101;
+  padding: 5px 15px;
+  border: #3db8f9 1px solid;
+  border-bottom: 0;
+  align-items: center;
+  z-index: 3;
+  overflow-y: scroll;
+  height: fit-content;
+  position: relative;
+  overflow: visible; 
+}
+.comandos a.link.color-extra {
+  text-decoration: none;
+  cursor: pointer;
+  color: #8dec36;
+  transition: background-color 0.3s;
+}
+.comandos a.link.color-extra:hover {
+  color: #010101;
+  background-color: #8dec36;
+}
+.comandos a.link.color-primary {
+  text-decoration: none;
+  cursor: pointer;
+  color: #3db8f9;
+  transition: background-color 0.3s;
+}
+.comandos a.link.color-primary:hover {
+  color: #010101;
+  background-color: #3db8f9;
+}
+.comandos p {
+  display: contents;
+  color: aliceblue
+}
+.comandos p.linea-activa {
+  font-weight: 900;
+  font-size: larger;
+}
+.comandos p.color-primary {
+  color: #3db8f9;
+}
+.comandos p.color-secondary {
+  color: #36ecdd;
+}
+.comandos p.color-extra {
+  color: #8dec36;
+}
+ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+/*sections del acordeón*/
+.about, .servicios, .contacto, .mapa, .calendar {
+  width: -webkit-fill-available;
+  bottom: 0;
+  position: relative;
+}
+.servicios.accordion.active {
+  max-height: 330px;
+}
+article.prod-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-y: scroll;
+  height: 229px;
+  padding: 0 7px;
+}
+.producto {
+  display: flex;
+  height: auto;
+  min-height: fit-content;
+  max-width: -webkit-fill-available;
+  width: auto;
+  padding: 5px 0px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.producto p {
+  text-align: justify;
+  display: block;
+}
+.producto button {
+  width: fit-content;
+  margin-top: 10px;
+  padding: 5px;
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  background-color: #8dec36;
+  border: none;
+  border-radius: 2px;
+  color: #010101;
+  cursor: pointer;
+}
+h2 {
+  color: #8dec36;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+}
+h3 {
+  color: #3db8f9;
+  text-align: left;
+  width: -webkit-fill-available;
+  margin-bottom: 5px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 15px;
+}
+form {
+  max-width: 328px;
+  width: -webkit-fill-available;
+  margin: 0 auto;
+}
+form label {
+  display: inline-block;
+  width: 60px;
+  text-align: end;
+  vertical-align: top;
+}
+form input, form textarea {
+  width: 264px;
+  margin: 1px 0;
+  border: 1px solid #3db8f9;
+  color: aliceblue;
+  background: transparent;
+  border-radius: 2px;
+}
+form button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  color: #8dec36;
+  border: #8dec36 1px solid;
+  padding: 4px;
+  border-radius: 2px;
+  margin-top: 2px;
+  margin-right: 1px;
+}
+/* Para que funcione el acordeón de comandos */
+#closeAll {
+  cursor: pointer;
+  background-color: transparent;
+  color: #8dec36;
+  border: none;
+}
+.accordion {
+  max-height: 0;
+  overflow: hidden;
+}
+.accordion.active {
+  max-height: 460px;
+}
+/*error iframe*/
+.error {
+  color: aliceblue;
+}
+/* Footer */
+footer {
+  position: fixed;
+  height: 80px;
+  background-color: #090909;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+  text-align: left;
+  padding: 5px;
+  font-size: 13px;
+  border-top: #3db8f9 1px solid;
+  align-content: space-around;
+}
+.copyright {
+  text-align: left;
+}
+img.coneja, img.perro {
+    display: none;
+}
+/* Medias Querys */
+@media (min-width: 768.1px) {
+  header {
+    padding: 15px 0;
+  }
+  .post-it#azul {
+    float: left;
+  }
+  .post-it#verde {
+    right: 41px;
+    top: 10px;
+  }
+  .juntos.j1{
+    left: 265px;
+    top: 60px;
+  }
+  .juntos.j2{
+    right: 30px;
+    bottom: 240px;
+  }
+  .comandos {
+    width: 700px;
+    bottom: 40px;
+    padding: 15px 25px;
+    height: fit-content;
+  }
+  /*sections del acordeón*/
+  .about, .servicios, .contacto, .mapa, .calendar {
+    width: -webkit-fill-available;
+    bottom: 0;
+    position: relative;
+  }
+  article.prod-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+  }
+  .producto {
+    display: flex;
+    height: auto;
+    min-height: 190px;
+    max-width: 185px;
+    width: auto;
+    padding: 10px 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .producto p {
+    text-align: justify;
+    display: block;
+  }
+  .producto button {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    background-color: #8dec36;
+    border: none;
+    border-radius: 2px;
+    color: #010101;
+    cursor: pointer;
+  }
+  h2 {
+    color: #8dec36;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px;
+  }
+  h3 {
+    color: #3db8f9;
+    text-align: left;
+    width: 185px;
+    margin-bottom: 10px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+  }
+  form {
+    margin-left: 111px;
+    max-width: 330px;
+  }
+  form label {
+    display: inline-block;
+    width: 60px;
+    text-align: end;
+    vertical-align: top;
+  }
+  form input, form textarea {
+    width: 266px;
+    margin: 1px 0;
+    border: 1px solid #3db8f9;
+    color: aliceblue;
+    background: transparent;
+    border-radius: 2px;
+  }
+  form button {
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    color: #8dec36;
+    border: #8dec36 1px solid;
+    padding: 4px;
+    border-radius: 2px;
+    margin-top: 2px;
+    margin-right: 1px;
+  }
+  footer {
+    height: 40px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px 15px;
+  }
+  img.coneja {
+    display: revert;
+    position: absolute;
+    z-index: 4;
+    width: 210px;
+    top: -66px;
+    left: 76%;
+  }
+  img.perro {
+    display: revert;
+    left: 697px;
+    bottom: 29px;
+    position: absolute;
+    z-index: 4;
+    width: 155px;
+}
+}
+@media (min-width: 1024.1px) {
+  header {
+    padding: 15px 0;
+  }
+  .post-it#azul {
+    float: left;
+  }
+  .post-it#verde {
+    right: 190px;
+    top: 10px;
+  }
+  .juntos.j1{
+    left: 265px;
+    top: 60px;
+  }
+  .juntos.j2{
+    right: 30px;
+    bottom: 100px;
+  }
+  .comandos {
+    width: 700px;
+    bottom: 40px;
+    padding: 15px 25px;
+    height: fit-content;
+  }
+  /*sections del acordeón*/
+  .about, .servicios, .contacto, .mapa, .calendar {
+    width: -webkit-fill-available;
+    bottom: 0;
+    position: relative;
+  }
+  article.prod-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-between;
+    height: auto;
+    overflow-y: revert;
+  }
+  .producto {
+    display: flex;
+    height: auto;
+    min-height: 190px;
+    max-width: 185px;
+    width: auto;
+    padding: 10px 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .producto p {
+    text-align: justify;
+    display: block;
+  }
+  .producto button {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 5px;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    background-color: #8dec36;
+    border: none;
+    border-radius: 2px;
+    color: #010101;
+    cursor: pointer;
+  }
+  h2 {
+    color: #8dec36;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px;
+  }
+  h3 {
+    color: #3db8f9;
+    text-align: left;
+    width: 185px;
+    margin-bottom: 10px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+  }
+  form {
+    margin-left: 111px;
+    max-width: 330px;
+  }
+  form label {
+    display: inline-block;
+    width: 60px;
+    text-align: end;
+    vertical-align: top;
+  }
+  form input, form textarea {
+    width: 266px;
+    margin: 1px 0;
+    border: 1px solid #3db8f9;
+    color: aliceblue;
+    background: transparent;
+    border-radius: 2px;
+  }
+  form button {
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    color: #8dec36;
+    border: #8dec36 1px solid;
+    padding: 4px;
+    border-radius: 2px;
+    margin-top: 2px;
+    margin-right: 1px;
+  }
+  footer {
+    height: 40px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px 15px;
+  }
+  img.coneja {
+    display: revert;
+    left: 536px;
+    bottom: 143px;
+    position: absolute;
+    z-index: 4;
+    width: 210px;
+  }
+  img.perro {
+    display: revert;
+    left: 697px;
+    bottom: 29px;
+    position: absolute;
+    z-index: 4;
+    width: 155px;
+}
+}
