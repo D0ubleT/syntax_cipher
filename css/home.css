@@ -75,22 +75,22 @@ main {
   list-style-type: circle;
   margin-left: 20px;
 }
-.post-it#azul {
+.post-it#verde {
   background-color: #a1c8e9;
   transform: rotate(-2deg);
   position: absolute;
   top: 168px;
   z-index: 1;
-  background-image: url(https://d0ublet.github.io/syntax_cipher/media/img/celeste.png);
+  background-image: url(https://d0ublet.github.io/syntax_cipher/media/img/verde.png);
   background-size: 100%;
 }
-.post-it#verde {
+.post-it#celeste {
   background-color: #bcdfc9;
   transform: rotate(-5deg);
   right: 1px;
   position: absolute;
   top: 30px;
-  background-image: url(https://d0ublet.github.io/syntax_cipher/media/img/verde.png);
+  background-image: url(https://d0ublet.github.io/syntax_cipher/media/img/celeste.png);
   background-size: 100%;
 }
 .post-it#amarillo {
@@ -323,10 +323,10 @@ img.coneja, img.perro {
   header {
     padding: 15px 0;
   }
-  .post-it#azul {
+  .post-it#verde {
     float: left;
   }
-  .post-it#verde {
+  .post-it#celeste {
     right: 41px;
     top: 10px;
   }
@@ -462,10 +462,10 @@ img.coneja, img.perro {
   header {
     padding: 15px 0;
   }
-  .post-it#azul {
+  .post-it#verde {
     float: left;
   }
-  .post-it#verde {
+  .post-it#celeste {
     right: 190px;
     top: 10px;
   }
