@@ -39,7 +39,6 @@ h1 {
 }
 html, body {
   height: 100%;
-  margin: 0;
 }
 body {
   font-family: "Oxanium", sans-serif;
@@ -52,18 +51,12 @@ body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
 }
 main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-ul {
-  list-style-type: none;
-  margin-left: 20px;
+  height: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 h2 {
   color: #8dec36;
@@ -81,6 +74,35 @@ h3 {
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 15px;
+}
+form label {
+  display: inline-block;
+  width: 60px;
+  text-align: end;
+  vertical-align: top;
+}
+form input, form textarea {
+  width: 264px;
+  margin: 1px 0;
+  border: 1px solid #3db8f9;
+  color: aliceblue;
+  background: transparent;
+  border-radius: 2px;
+}
+form button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  color: #8dec36;
+  border: #8dec36 1px solid;
+  padding: 4px;
+  border-radius: 2px;
+  margin-top: 2px;
+  margin-right: 1px;
+}
+/*error iframe*/
+.error {
+  color: aliceblue;
 }
 /* Footer */
 footer {
@@ -103,12 +125,15 @@ footer {
 .copyright {
   text-align: left;
 }
+img.coneja, img.perro {
+    display: none;
+}
 /* Medias Querys */
 @media (min-width: 768.1px) {
   header {
     padding: 15px 0;
   }
-  h2 {
+   h2 {
     color: #8dec36;
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
@@ -125,13 +150,38 @@ footer {
     font-style: normal;
     font-size: 15px;
   }
+  form label {
+    display: inline-block;
+    width: 60px;
+    text-align: end;
+    vertical-align: top;
+  }
+  form input, form textarea {
+    width: 266px;
+    margin: 1px 0;
+    border: 1px solid #3db8f9;
+    color: aliceblue;
+    background: transparent;
+    border-radius: 2px;
+  }
+  form button {
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    color: #8dec36;
+    border: #8dec36 1px solid;
+    padding: 4px;
+    border-radius: 2px;
+    margin-top: 2px;
+    margin-right: 1px;
+  }
   footer {
     height: 40px;
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 5px 15px;
   }
-}
+ }
 @media (min-width: 1024.1px) {
   header {
     padding: 15px 0;
@@ -152,6 +202,31 @@ footer {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 15px;
+  }
+  form label {
+    display: inline-block;
+    width: 60px;
+    text-align: end;
+    vertical-align: top;
+  }
+  form input, form textarea {
+    width: 266px;
+    margin: 1px 0;
+    border: 1px solid #3db8f9;
+    color: aliceblue;
+    background: transparent;
+    border-radius: 2px;
+  }
+  form button {
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    color: #8dec36;
+    border: #8dec36 1px solid;
+    padding: 4px;
+    border-radius: 2px;
+    margin-top: 2px;
+    margin-right: 1px;
   }
   footer {
     height: 40px;
