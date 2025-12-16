@@ -1,0 +1,162 @@
+/*Títulos*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+/*Texto general*/
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+/*Para error*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+
+h1#error {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  padding: 5px 0;
+}
+.logo-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo-img {
+  width: auto;
+  height: 35px;
+  margin: 0px 15px 0px 15px;
+}
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  background-color: #010101;
+  color: #3db8f9;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+h2 {
+  color: #8dec36;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+}
+h3 {
+  color: #3db8f9;
+  text-align: left;
+  width: -webkit-fill-available;
+  margin-bottom: 5px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 15px;
+}
+/* Footer */
+footer {
+  position: fixed;
+  height: 80px;
+  background-color: #090909;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: -webkit-fill-available;
+  text-align: left;
+  padding: 5px;
+  font-size: 13px;
+  border-top: #3db8f9 1px solid;
+  align-content: space-around;
+}
+.copyright {
+  text-align: left;
+}
+/* Medias Querys */
+@media (min-width: 768.1px) {
+  header {
+    padding: 15px 0;
+  }
+  h2 {
+    color: #8dec36;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px;
+  }
+  h3 {
+    color: #3db8f9;
+    text-align: left;
+    width: 185px;
+    margin-bottom: 10px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+  }
+  footer {
+    height: 40px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px 15px;
+  }
+}
+@media (min-width: 1024.1px) {
+  header {
+    padding: 15px 0;
+  }
+  h2 {
+    color: #8dec36;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px;
+  }
+  h3 {
+    color: #3db8f9;
+    text-align: left;
+    width: 185px;
+    margin-bottom: 10px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+  }
+  footer {
+    height: 40px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px 15px;
+  }
+}
