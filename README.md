@@ -9,6 +9,6 @@ Toda la información en esta web es **ficticia** y hace referencia a una partida
 - **Asistencia:** Agus Decima - *Campaña, información de la ciudad, mapa, personaje*
 
 ## Links directos:
-**Login:** https://d0ublet.github.io/syntax_cipher/
-**Home:** https://d0ublet.github.io/syntax_cipher/pages/home.html
+**Login:** https://d0ublet.github.io/syntax_cipher/  
+**Home:** https://d0ublet.github.io/syntax_cipher/pages/home.html  
 **Error:** https://d0ublet.github.io/syntax_cipher/pages/error.html
