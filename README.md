@@ -7,7 +7,7 @@ Toda la información en esta web es **ficticia** y hace referencia a una partida
 ## Equipo Responsable
 - **Creador:** Vittorio Tristan Mazar - *Diseño, maquetado, armado, personaje*
 - **Asistencia:** Agus Decima - *Campaña, información de la ciudad, mapa, personaje*
-- **Ilustradora:** Poli - *Ilustraciones, post-its*
+- **Ilustradora:** Polina Holdbrook - *Ilustraciones, post-its* - https://www.instagram.com/polina_holdbrook
 
 ## Links directos:
 **Login:** https://d0ublet.github.io/syntax_cipher/  
