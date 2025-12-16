@@ -81,6 +81,8 @@ main {
   position: absolute;
   top: 168px;
   z-index: 1;
+  background-image: url(https://d0ublet.github.io/syntax_cipher/media/img/celeste.png);
+  background-size: 100%;
 }
 .post-it#verde {
   background-color: #bcdfc9;
@@ -88,6 +90,8 @@ main {
   right: 1px;
   position: absolute;
   top: 30px;
+  background-image: url(https://d0ublet.github.io/syntax_cipher/media/img/verde.png);
+  background-size: 100%;
 }
 .post-it#amarillo {
   background-color: #fff69b;
