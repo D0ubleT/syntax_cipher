@@ -144,7 +144,7 @@ img.coneja, img.perro {
     display: none;
 }
 /* Medias Querys */
-@media (min-width: 768.1px) {
+@media (min-width: 768px) {
   section.error {
     width: 67%;
   }
@@ -207,7 +207,7 @@ img.coneja, img.perro {
     padding: 5px 15px;
   }
  }
-@media (min-width: 1024.1px) {
+@media (min-width: 1024px) {
   section.error {
     width: 41%;
   }
