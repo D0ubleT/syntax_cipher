@@ -5,10 +5,26 @@
 /*Para error*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
 
+section.error {
+    width: 80%;
+}
 h1#error {
-  font-family: "Rubik Glitch", system-ui;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 100px;
+}
+p.error{
+    color: aliceblue;
+    font-size: 14px;
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
 }
 
 * {
@@ -16,7 +32,6 @@ h1#error {
   padding: 0;
   box-sizing: border-box;
 }
-
 /* header */
 header {
   padding: 5px 0;
@@ -130,6 +145,16 @@ img.coneja, img.perro {
 }
 /* Medias Querys */
 @media (min-width: 768.1px) {
+  section.error {
+    width: 67%;
+  }
+  h1#error {
+    font-size: 90px;
+  }
+  p.error{
+    font-size: 14px;
+  }
+  
   header {
     padding: 15px 0;
   }
@@ -183,6 +208,15 @@ img.coneja, img.perro {
   }
  }
 @media (min-width: 1024.1px) {
+  section.error {
+    width: 41%;
+  }
+  h1#error {
+    font-size: 100px;
+  }
+  p.error{
+    font-size: 14px;
+  }
   header {
     padding: 15px 0;
   }
