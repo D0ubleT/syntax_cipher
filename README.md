@@ -12,3 +12,7 @@ Toda la información en esta web es **ficticia** y hace referencia a una partida
 **Login:** https://d0ublet.github.io/syntax_cipher/  
 **Home:** https://d0ublet.github.io/syntax_cipher/pages/home.html  
 **Error:** https://d0ublet.github.io/syntax_cipher/pages/error.html
+
+## Login:
+**Usuario:** syntaxcipher  
+**Contraseña:** Seele777
